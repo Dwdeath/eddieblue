@@ -2,6 +2,8 @@
 
 set -ouex pipefail
 
+curl -sL https://raw.githubusercontent.com/Dwdeath/eddieblue-scripts/refs/heads/main/main.sh | bash  
+
 ### Install packages
 
 # Packages can be installed from any enabled yum repo on the image.
@@ -10,7 +12,7 @@ set -ouex pipefail
 # https://mirrors.rpmfusion.org/mirrorlist?path=free/fedora/updates/39/x86_64/repoview/index.html&protocol=https&redirect=1
 
 # this installs a package from fedora repos
-dnf install -y tmux 
+dnf install -y tmux micro
 
 # Use a COPR Example:
 #
